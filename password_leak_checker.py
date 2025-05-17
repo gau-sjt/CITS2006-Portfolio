@@ -1,5 +1,8 @@
 import hashlib
 import requests
+"""The program requests for a password and checks if it is vulnerable to breaches using the pwnedpasswods API.
+Sends the first 5 characters of the hash to the API and checks the returned suffixes for matches and returns the number of breaches.
+"""
 
 def check_password(password):
     # Step 1: Hash the password using SHA1
